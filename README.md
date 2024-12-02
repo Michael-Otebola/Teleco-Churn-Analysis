@@ -8,6 +8,16 @@ This project analyzes customer churn patterns in a telecom company using SQL, Py
 
 **_ Disclaimer_** : _All datasets and reports do not represent any company, institution or country, but just a dummy dataset to demostrate my proficiency in Data Analysis tools._
 
+## Table of Contents
+- [Objectives](##Objectives)
+- [Tools and Technologies](##Tools_and_Technologies)
+- [Skills/Concept Demostrated](##Skill/Concept_Demostrated)
+- [SQL Analysis](###1._SQL_Analysis)
+- [SQL Key Insigts](#####7._Key_Insights)
+- Python Analysis(##_Python_Analysis)
+- 
+
+
 ## Objectives
 1. Understand customer churn drivers and patterns.
 2. Build dashboards and KPIs to track churn metrics.
