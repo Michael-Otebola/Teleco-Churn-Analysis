@@ -200,6 +200,7 @@ This donut chart visualized churn rates across various payment methods, with ele
 
 - Churn vs. Dependent (Heat Map)
 Illustrated churn rates based on whether customers had dependents or not, helping to explore if dependents influence churn behavior.
+Use This Link to Interract with The Viz: [https://public.tableau.com/views/TelecomCustomerChurn_17326272284860/Visualization?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link]
 
 #### Key Insights from Visualizations
 - Contract Type: Month-to-month customers were significantly more likely to churn, suggesting that offering longer-term contracts may help reduce churn.
