@@ -9,8 +9,8 @@ This project analyzes customer churn patterns in a telecom company using SQL, Py
 **_ Disclaimer_** : _All datasets and reports do not represent any company, institution or country, but just a dummy dataset to demostrate my proficiency in Data Analysis tools._
 
 ## Table of Contents
-- [Objectives]([##Objectives](https://github.com/Michael-Otebola/Teleco-Churn-Analysis/blob/main/README.md#objectives)https://github.com/Michael-Otebola/Teleco-Churn-Analysis/blob/main/README.md#objectives)
-- [Tools and Technologies](##tools_and_technologies)
+- [Objectives](##objectives)
+- [Tools and Technologies](##tools-and-technologies)
 - [Skills/Concept Demostrated](##skill/concept_demostrated)
 - [SQL Analysis](###1_sql_analysis)
 - [SQL Key Insigts](#####7_key_insights)
