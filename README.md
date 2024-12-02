@@ -27,8 +27,67 @@ This project analyzes customer churn patterns in a telecom company using SQL, Py
 - Correlation Analysis: Identify relationships between numerical variables.
 - Churn Analysis: Explore customer churn trends based on demographics and contract types.
 
-_SQL Query Snippet:_
+#### SQL Workflow
+##### 1. Database Setup
+- Database Created: TelecommChurn
+- Table Used: telecomm_customer
+ - Schema Verification: Confirmed table structure using DESCRIBE.
+##### 2. Data Exploration
+- Performed initial checks on data quality and distribution:
+- Verified row counts and presence of null values in critical columns.
+- Explored categorical variables like Gender, Contract, and PaymentMethod.
+- Analyzed churn distribution and customer demographics.
 
+#### Key Queries:
+- Count of rows and non-null values.
+- Distribution of Gender, Churn, and Contract.
+- Frequency of PaymentMethod and other categorical fields.
+
+##### 3. Data Cleaning
+- Handled inconsistencies and missing data:
+- Standardized the Churn column to numeric values (1 for Yes, 0 for No).
+- Checked for invalid or missing entries in TotalCharges and MonthlyCharges.
+- Verified updates to Churn column using sample records.
+
+##### 4. Descriptive Analytics
+- Generated summary statistics for numerical variables:
+- Metrics such as minimum, maximum, average, and standard deviation were calculated for:
+- SeniorCitizen
+- Tenure
+- MonthlyCharges
+- TotalCharges
+###### Highlights:
+- Distribution of MonthlyCharges and TotalCharges was reviewed.
+- Identified frequently occurring MonthlyCharges values.
+
+##### 5. Correlation Analysis
+-Calculated the Pearson correlation coefficient between:
+MonthlyCharges and TotalCharges.
+
+##### 6. Churn Analysis
+Explored churn trends based on demographics and contract types:
+
+- Churn distribution across:
+- SeniorCitizen status.
+- Partner status.
+- Contract types.
+- Relationship between churn status and:
+- MonthlyCharges.
+- Tenure.
+
+##### 7. Key Insights
+Churn Rate:
+- A significant proportion of churn is observed among customers with shorter tenure and higher monthly charges.
+###### Demographics:
+- Senior citizens are more likely to churn compared to younger customers.
+- Customers without partners showed a higher churn rate.
+###### Contracts:
+- Month-to-month contracts are associated with higher churn rates compared to long-term contracts.
+###### Correlation:
+-A strong positive correlation exists between MonthlyCharges and TotalCharges.
+
+_SQL Query Snippet:_
+```
 _-- Correlation between MonthlyCharges and TotalCharges_
  _-- Using the Pearson Correlation Formular [between MonthlyCharges and TotalCharges]_
 
@@ -39,7 +98,7 @@ _SELECT
     
      SQRT(COUNT(*) * SUM(POW(TotalCharges, 2)) - POW(SUM(TotalCharges), 2))) AS Correlation
 FROM telecomm_customer;_
-
+```
 _The correlation between MonthlyCharges and TotalCharges is 0.6511, indicating a moderate to strong positive relationship. As MonthlyCharges increase, TotalCharges also tend to rise proportionally, It means that customers who pay higher monthly charges are likely to have higher total charges over time. This suggests a direct link between how much a customer is billed each month and their overall spending with the company._
 
 ## Python Analysis
@@ -73,22 +132,26 @@ Customers with month-to-month contracts showed significantly higher churn rates 
 - Precision for churners increased to 51%, providing a more actionable model for identifying potential churners.
 
    _Python Code Snippet:_
-
-  ``` # Select only numeric columns for correlation
+```
+   # Select only numeric columns for correlation
 numeric_columns = df.select_dtypes(include=['float64', 'int64'])
 ###### Check the selected columns
 print("Numeric Columns:\n", numeric_columns.columns)
+
 Numeric Columns:
  Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object')
 ###### Correlation heatmap
+
 plt.figure(figsize=(6, 4))
 correlation_matrix = numeric_columns.corr()  # Calculate the correlation matrix
 sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', linewidths=0.5)
 plt.title('Correlation Heatmap of Features')
 plt.show()
-![]()
 Numeric Columns:
  Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object')
+```
+[I'm a relative reference to a repository file][(MySQL Telocomm Project  Analysis.sql](https://github.com/Michael-Otebola/Teleco-Churn-Analysis/blob/334513e23c12272b3f9bb8d1921d27cd74d072ae/MySQL%20Telocomm%20Project%20%20Analysis.sql))
+![](Correlation_Heatmap.PNG)
 
 Key Insights: Tenure is highly correlated with total charges (0.83):
 Customers who stay longer will naturally have higher total charges. This is an important feature to consider when analyzing or predicting churn.
