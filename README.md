@@ -14,7 +14,7 @@ This project analyzes customer churn patterns in a telecom company using SQL, Py
 - [Skills/Concept Demostrated](##Skill/Concept_Demostrated)
 - [SQL Analysis](###1._SQL_Analysis)
 - [SQL Key Insigts](#####7._Key_Insights)
-- Python Analysis(##_Python_Analysis)
+- [Python Analysis](##_Python_Analysis)
 - 
 
 
