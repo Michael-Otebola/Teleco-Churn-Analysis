@@ -154,8 +154,7 @@ Numeric Columns:
 ```
 
 ![](Correlation_Heatmap.PNG)
-
-Click Here to View Complete Python Code: https://github.com/Michael-Otebola/Teleco-Churn-Analysis/blob/de70f94b54b01e020c1e83f325ea43e4d99d285f/Telecom_Customer_Churn_Analysis%20.ipynb
+[Click Here To View Complete Python Code]([../blob/master/LICENSE](https://github.com/Michael-Otebola/Teleco-Churn-Analysis/blob/de70f94b54b01e020c1e83f325ea43e4d99d285f/Telecom_Customer_Churn_Analysis%20.ipynb))
 
 Key Insights: Tenure is highly correlated with total charges (0.83):
 Customers who stay longer will naturally have higher total charges. This is an important feature to consider when analyzing or predicting churn.
@@ -171,4 +170,38 @@ Being a senior citizen does not strongly influence tenure, monthly charges, or t
 - Customers with longer tenure and bundled services are less likely to churn.
 
 
+## Tableau Visualizations
+The Tableau dashboard provided insights into customer churn through various KPIs and visualizations, helping to identify key drivers of churn and areas for business improvement.
+
+#### Key Performance Indicators (KPIs)
+- Churn Rate: The percentage of customers who have churned, providing a quick overview of the churn problem.
+- Total Churned Customers: The total number of customers who have left, offering a context of the scale of churn.
+- Average Tenure of Churned Customers: This shows the average length of time churned customers had been with the company, helping identify potential areas for customer retention efforts.
+- Total Revenue: The overall revenue generated, used to measure the financial scale of the business.
+- Revenue Lost to Churn: The revenue lost due to churned customers, an important metric to quantify the financial impact of churn.
+
+#### Main Dashboard Visualizations
+- Churn Distribution (Pie Chart)
+Visualized the distribution of churned vs. non-churned customers, giving an immediate sense of the churn problem.
+
+- Monthly Charges Distribution by Churn (Horizontal Bar Chart)
+Displayed the distribution of monthly charges among churned and non-churned customers, helping to identify whether higher charges correlate with churn.
+
+- Churn by Contract Type (Packed Bubbles)
+Showed the relationship between churn and different contract types, highlighting that month-to-month contracts have higher churn rates than longer-term contracts.
+
+- Churn by Internet Service (Scatter Plot)
+Provided insight into how different types of internet services (Fiber optic, DSL, etc.) relate to churn, showing that fiber optic users tend to have higher churn rates than others.
+
+- Churn vs. Payment Method (Donut Chart)
+This donut chart visualized churn rates across various payment methods, with electronic checks showing higher churn rates compared to other payment methods like automatic bank transfers.
+
+- Churn vs. Dependent (Heat Map)
+Illustrated churn rates based on whether customers had dependents or not, helping to explore if dependents influence churn behavior.
+
+#### Key Insights from Visualizations
+- Contract Type: Month-to-month customers were significantly more likely to churn, suggesting that offering longer-term contracts may help reduce churn.
+- Revenue Impact: Higher monthly charges were often associated with churned customers, indicating the need for a deeper investigation into the pricing structure.
+- Payment Methods: Electronic checks showed a strong correlation with higher churn, indicating that payment method choices might be an area for customer retention strategies.
+- Service Type: Customers with fiber optic internet services had higher churn rates, suggesting a potential need for improving service delivery or pricing for this group.
 
