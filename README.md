@@ -154,9 +154,8 @@ Numeric Columns:
 ```
 
 ![](Correlation_Heatmap.PNG)
-[Click Here To View Complete Python Code]([../blob/master/LICENSE](https://github.com/Michael-Otebola/Teleco-Churn-Analysis/blob/de70f94b54b01e020c1e83f325ea43e4d99d285f/Telecom_Customer_Churn_Analysis%20.ipynb))
 
-https://github.com/Michael-Otebola/Teleco-Churn-Analysis/blob/1224ede081112fd234e7f7ddc9144ac4cee6ec02/Telecom_Customer_Churn_Analysis%20.ipynb
+Click Here To View Complete Python Code: [https://github.com/Michael-Otebola/Teleco-Churn-Analysis/blob/1224ede081112fd234e7f7ddc9144ac4cee6ec02/Telecom_Customer_Churn_Analysis%20.ipynb]
 
 Key Insights: Tenure is highly correlated with total charges (0.83):
 Customers who stay longer will naturally have higher total charges. This is an important feature to consider when analyzing or predicting churn.
@@ -174,6 +173,7 @@ Being a senior citizen does not strongly influence tenure, monthly charges, or t
 
 ## Tableau Visualizations
 The Tableau dashboard provided insights into customer churn through various KPIs and visualizations, helping to identify key drivers of churn and areas for business improvement.
+![](Visualization.png)
 
 #### Key Performance Indicators (KPIs)
 - Churn Rate: The percentage of customers who have churned, providing a quick overview of the churn problem.
@@ -206,4 +206,80 @@ Illustrated churn rates based on whether customers had dependents or not, helpin
 - Revenue Impact: Higher monthly charges were often associated with churned customers, indicating the need for a deeper investigation into the pricing structure.
 - Payment Methods: Electronic checks showed a strong correlation with higher churn, indicating that payment method choices might be an area for customer retention strategies.
 - Service Type: Customers with fiber optic internet services had higher churn rates, suggesting a potential need for improving service delivery or pricing for this group.
+  ---
+
+ ####  Overall Insights, Recommendations, and Conclusions
+ ---
+##### Insights
+###### Churn Behavior:
+- Customers on month-to-month contracts have the highest churn rates, suggesting a lack of commitment compared to annual or two-year contracts.
+- Higher monthly charges are correlated with higher churn, potentially indicating pricing sensitivity.
+- Payment methods like electronic checks showed a higher churn rate, possibly due to convenience or trust issues.
+
+###### Customer Demographics:
+- Customers without dependents and those who are senior citizens churn more often, indicating potential dissatisfaction or unmet needs among these groups.
+
+###### Service Insights:
+- Fiber optic internet users tend to churn more than DSL or no internet service users, potentially due to performance or pricing concerns.
+
+###### Financial Impact:
+- The company is losing a significant portion of revenue due to churn, emphasizing the need for targeted retention strategies.
+
+#### Recommendations
+###### Retention Strategies:
+- Incentivize long-term contracts through discounts or added benefits to reduce churn from month-to-month customers.
+- Introduce personalized offers for high-risk groups such as senior citizens or single individuals to improve satisfaction and loyalty.
+
+###### Pricing Adjustments:
+- Reevaluate the pricing structure, especially for customers on higher monthly charges. Consider value-based pricing or bundling services.
+- **Payment Method Improvements**:
+- Encourage customers to use automatic bank transfers or credit card payments by offering incentives like discounts or loyalty points.
+
+###### Service Quality:
+- Conduct a deep dive into fiber optic service complaints to identify and address service gaps that lead to dissatisfaction.
+
+###### Data-Driven Decisions:
+- Implement machine learning models in production for real-time churn prediction and proactive intervention.
+_###### Conclusions_
+_The analysis using SQL, Python, and Tableau has revealed critical areas where the company can reduce churn and improve customer retention. By addressing factors like contract types, pricing, and service quality, the business can mitigate churn's financial and operational impacts. A continued focus on data-driven decision-making will allow for sustainable growth and improved customer satisfaction._
+
+##### Acknowledgments
+This project was made possible through:
+
+The availability of the Telecom Customer Dataset.
+Support from data analysis tools such as SQL, Python, and Tableau.
+Inspiration from academic and professional data analysis practices.
+Thank you to all contributors who helped refine the project’s methodology and outcomes.
+
+##### Future Work
+**Advanced Modeling:**
+- Explore ensemble methods like Random Forests or Gradient Boosting to improve churn prediction accuracy.
+- Implement real-time prediction systems integrated into the company’s CRM for immediate action.
+**Customer Segmentation:**
+Develop a segmentation strategy to tailor offers and services to different customer groups based on churn likelihood.
+**Customer Feedback Integration:**
+Use sentiment analysis from customer feedback to identify pain points and proactively resolve issues.
+**New Metrics:**
+Introduce additional KPIs such as customer lifetime value (CLV) and customer acquisition cost (CAC) to complement churn analysis.
+**Automation and Scaling:**
+Automate the pipeline for data cleaning, analysis, and visualization for scalability and faster insights delivery.
+
+#### How to Use This Report
+**SQL Section:**
+- Use the provided SQL queries to explore and clean customer data, identify key trends, and calculate descriptive statistics.
+- Python Section:
+- Run the Python scripts for predictive analysis, including logistic regression models for churn prediction.
+- Tableau Dashboards:
+- Open the Tableau workbook to interact with visualizations and gain quick insights into churn dynamics.
+- Business Application:
+- Translate insights into actionable strategies, focusing on pricing, contracts, and service improvements.
+
+_##Thank You_
+_Thank you for taking the time to review this comprehensive churn analysis. Your feedback and suggestions are greatly appreciated. We hope this work sparks ideas for improving customer retention and advancing data-driven decision-making in your organization._
+
+Feel free to reach out for collaboration or further exploration of these findings.
+
+#### Happy Analyzing!
+
+
 
