@@ -156,6 +156,8 @@ Numeric Columns:
 ![](Correlation_Heatmap.PNG)
 [Click Here To View Complete Python Code]([../blob/master/LICENSE](https://github.com/Michael-Otebola/Teleco-Churn-Analysis/blob/de70f94b54b01e020c1e83f325ea43e4d99d285f/Telecom_Customer_Churn_Analysis%20.ipynb))
 
+https://github.com/Michael-Otebola/Teleco-Churn-Analysis/blob/1224ede081112fd234e7f7ddc9144ac4cee6ec02/Telecom_Customer_Churn_Analysis%20.ipynb
+
 Key Insights: Tenure is highly correlated with total charges (0.83):
 Customers who stay longer will naturally have higher total charges. This is an important feature to consider when analyzing or predicting churn.
 Monthly charges moderately correlate with total charges (0.65):
