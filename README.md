@@ -99,6 +99,10 @@ _SELECT
      SQRT(COUNT(*) * SUM(POW(TotalCharges, 2)) - POW(SUM(TotalCharges), 2))) AS Correlation
 FROM telecomm_customer;_
 ```
+View The Complete SQL Code Here: [(MySQL Telocomm Project  Analysis.sql](https://github.com/Michael-Otebola/Teleco-Churn-Analysis/blob/334513e23c12272b3f9bb8d1921d27cd74d072ae/MySQL%20Telocomm%20Project%20%20Analysis.sql))
+
+<a href=(https://github.com/Michael-Otebola/Teleco-Churn-Analysis/blob/334513e23c12272b3f9bb8d1921d27cd74d072ae/MySQL%20Telocomm%20Project%20%20Analysis.sql))target="blank">View The Complete SQL Code Here</a>
+
 _The correlation between MonthlyCharges and TotalCharges is 0.6511, indicating a moderate to strong positive relationship. As MonthlyCharges increase, TotalCharges also tend to rise proportionally, It means that customers who pay higher monthly charges are likely to have higher total charges over time. This suggests a direct link between how much a customer is billed each month and their overall spending with the company._
 
 ## Python Analysis
@@ -150,7 +154,7 @@ plt.show()
 Numeric Columns:
  Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='object')
 ```
-[I'm a relative reference to a repository file][(MySQL Telocomm Project  Analysis.sql](https://github.com/Michael-Otebola/Teleco-Churn-Analysis/blob/334513e23c12272b3f9bb8d1921d27cd74d072ae/MySQL%20Telocomm%20Project%20%20Analysis.sql))
+
 ![](Correlation_Heatmap.PNG)
 
 Key Insights: Tenure is highly correlated with total charges (0.83):
